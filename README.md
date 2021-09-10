@@ -73,3 +73,36 @@ int main()
 	printf("%f\n", f/3);
 	return 0;
 }
+
+
+int Add(int x, int y)
+{
+	int z = x + y;
+	return z;
+}               //这是自定义的加法函数
+#include<stdio.h>
+int main()
+{
+	int a = 100;
+	int b = 298;
+	int sum = 0;
+	sum = Add(a, b);
+	printf("sum=%d\n", sum);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+	int line = 0;
+	while (line < 5000)
+	{
+		printf("敲一行代码：%d\n", line);
+			line++;
+	}
+	if (line >= 5000)
+		printf("good offer");
+	return 0;
+}
+
