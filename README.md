@@ -52,3 +52,24 @@ int Add(int x, int y)
 		printf("只能搬砖\n");
 	return 0;
 }
+
+
+#include <stdio.h>
+int global = 2019;//全局变量
+int main()
+{
+	int local = 2018;//局部变量
+	//下面定义的global会不会有问题？
+	int global = 2020;//局部变量
+	printf("global = %d\n", global);
+	return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+	float f=96.5;
+	printf("%f\n", f/3);
+	return 0;
+}
