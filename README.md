@@ -106,3 +106,40 @@ int main()
 	return 0;
 }
 
+#include<stdio.h>
+void test()
+{
+    int a = 1;
+	a++;
+	printf("a =%d\n", a);//输出的a的值是2
+}
+int main()
+{
+	int i= 0;
+	while (i < 5)//i从0开始到4，循环5次
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
+
+#include<stdio.h>
+void test()
+{
+	static int a = 1;//static使a成为了静态局部变量，在进行下一次循环时，上一次循环结束时的a的结果保持不变
+	a++;
+	printf("a =%d\n", a);//输出的值依次为2,3,4,5,6
+}
+int main()
+{
+	int i = 0;
+	while (i < 5)//i从0开始到4，循环5次
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
+
+
