@@ -142,4 +142,15 @@ int main()
 	return 0;
 }
 
+#include<stdio.h>
+int main()
+{
+	int a = 10;
+    int* p = &a;//p是指针，int*是p的类型
+    printf("%p\n", p);
+	printf("%p\n", &a);//打印储存a的地址
+	return 0;
+}
+
+
 
