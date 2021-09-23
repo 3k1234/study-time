@@ -153,4 +153,22 @@ int main()
 }
 
 
+struct BOOK
+{
+	char name[20];
+	short price;
+};
+
+#include<stdio.h>
+int main()
+{
+	struct BOOK b1 = { "c语言程序设计",55 };
+	struct BOOK* p = &b1;
+	printf("书名：%s\n", p->name);
+	printf("价格：%5d\n", p->price);
+	return 0;
+}
+
+
+
 
